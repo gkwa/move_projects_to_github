@@ -5,14 +5,14 @@ Move as many as my projects to github as I can will require a script
 
 Steps
 -----
-1) create empty project on github with the same name as pre-existing project
-2) git remote add gh git@github.com:taylormonacelli/{project-name}.git
-3) overwrite github project with my pre-existing project: git push gh --force
-4) remove project from git-repo manifest default ~/pdev/manifest/default.xml and commit
-5) add project to ~/pdgh/manifest/default.xml and commit
-6) cd ~/pdgh && repo sync
-7) rm -rf ~/pdev/{project-name}
-8) ssh dev rm -rf /var/www/html/proj/{project-name}.git
+1. create empty project on github with the same name as pre-existing project
+2. git remote add gh git@github.com:taylormonacelli/{project-name}.git
+3. overwrite github project with my pre-existing project: git push gh --force
+4. remove project from git-repo manifest default ~/pdev/manifest/default.xml and commit
+5. add project to ~/pdgh/manifest/default.xml and commit
+6. cd ~/pdgh && repo sync
+7. rm -rf ~/pdev/{project-name}
+8. ssh dev rm -rf /var/www/html/proj/{project-name}.git
 
 Tutorials / tidbits
 ------------------------------------
