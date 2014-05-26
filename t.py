@@ -10,12 +10,10 @@ pdghset = set()
 pdevset = set()
 
 for elem in pdevtree.iter('project'):
-    if 'name' in elem.attrib:
-        pdevset.add(elem.attrib['name'])
+    pdevset.add(elem.attrib['name'])
 
 for elem in pdghtree.iter('project'):
-    if 'name' in elem.attrib:
-        pdghset.add(elem.attrib['name'])
+    pdghset.add(elem.attrib['name'])
 
 for project in pdghset.intersection(pdevset):
     print "already merged: %s" % project
