@@ -1,6 +1,4 @@
 #!/bin/sh
-
-python ~/pdev/python-practice/add-remove-xml-nodes/t.py -f ~/pdev/manifest/default.xml --rand
 cd ~/pdgh/manifest
 python ~/pdev/python-practice/add-remove-xml-nodes/t.py -f ~/pdgh/manifest/default.xml --add "{{ project }}"
 git commit -m "Add {{ project }} project" -a

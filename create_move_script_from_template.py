@@ -13,3 +13,5 @@ script = "move.sh"
 script_tmpl.stream(
     project=args.project
 ).dump(script)
+
+print "cat move.sh"
