@@ -15,7 +15,7 @@ Steps
 
 ```sh
 cd '/Users/demo/pdgh/manifest/'
-python /Users/demo/pdev/python-practice/add-remove-xml-nodes/t.py -f /Users/demo/pdgh/manifest/default.xml --add convert_ip_to_integer
+python ~/pdev/python-practice/add-remove-xml-nodes/t.py -f ~/pdgh/manifest/default.xml --add convert_ip_to_integer
 g commit -m "Add convert_ip_to_integer project" -a
 git show --color
 git remote add gh git@github.com:taylormonacelli/convert_ip_to_integer.git
