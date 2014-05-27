@@ -14,15 +14,19 @@ Steps
 8. `ssh dev rm -rf /var/www/html/proj/{project-name}.git`
 
 ```sh
-cd '/Users/demo/pdgh/manifest/'
+cd ~/pdgh/manifest
 python ~/pdev/python-practice/add-remove-xml-nodes/t.py -f ~/pdgh/manifest/default.xml --add convert_ip_to_integer
-g commit -m "Add convert_ip_to_integer project" -a
+git commit -m "Add convert_ip_to_integer project" -a
 git show --color
 git remote add gh git@github.com:taylormonacelli/convert_ip_to_integer.git
 git push --set-upstream gh master --force
-cd '/Users/demo/pdgh'
+cd ~/pdgh
 repo sync convert_ip_to_integer
-cd '/Users/demo/pdgh/convert_ip_to_integer/'
+cd ~/pdgh/convert_ip_to_integer
+python ~/pdev/python-practice/add-remove-xml-nodes/t.py -f ~/pdev/manifest/default.xml --remove convert_ip_to_integer
+cd ~/pdev/manifest
+git diff --color
+git commit -m "Move convert_ip_to_integer project to github" -a
 ```
 
 Tutorials / tidbits
