@@ -13,6 +13,18 @@ Steps
 7. `rm -rf ~/pdev/{project-name}`
 8. `ssh dev rm -rf /var/www/html/proj/{project-name}.git`
 
+```sh
+cd '/Users/demo/pdgh/manifest/'
+python /Users/demo/pdev/python-practice/add-remove-xml-nodes/t.py -f /Users/demo/pdgh/manifest/default.xml --add convert_ip_to_integer
+g commit -m "Add convert_ip_to_integer project" -a
+git show --color
+git remote add gh git@github.com:taylormonacelli/convert_ip_to_integer.git
+git push --set-upstream gh master --force
+cd '/Users/demo/pdgh'
+repo sync convert_ip_to_integer
+cd '/Users/demo/pdgh/convert_ip_to_integer/'
+```
+
 Tutorials / tidbits
 ------------------------------------
 * http://blog.troygrosfield.com/2010/12/18/parsing-xml-with-python-using-elementtree
