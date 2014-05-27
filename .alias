@@ -1,0 +1,2 @@
+alias r='sh ~/pdgh/move_projects_to_github/t2.sh'
+alias b='echo cd ~/pdgh/move_projects_to_github'

@@ -14,6 +14,7 @@ Steps
 8. `ssh dev rm -rf /var/www/html/proj/{project-name}.git`
 
 ```sh
+python ~/pdev/python-practice/add-remove-xml-nodes/t.py -f ~/pdev/manifest/default.xml --rand
 cd ~/pdgh/manifest
 python ~/pdev/python-practice/add-remove-xml-nodes/t.py -f ~/pdgh/manifest/default.xml --add convert_ip_to_integer
 git commit -m "Add convert_ip_to_integer project" -a
