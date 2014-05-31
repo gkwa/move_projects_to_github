@@ -8,10 +8,10 @@ parser.add_argument("-p", "--project",help="project name")
 args = parser.parse_args()
 env = Environment(loader=FileSystemLoader('/Users/demo/pdgh/move_projects_to_github/templates'))
 script_tmpl = env.get_template('move_template.sh')
-script = "move.sh"
+script = "/tmp/move.sh"
 
 script_tmpl.stream(
     project=args.project
 ).dump(script)
 
-print "cat move.sh"
+print "cat /tmp/move.sh"
