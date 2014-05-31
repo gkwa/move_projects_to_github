@@ -6,4 +6,3 @@ python ~/pdgh/python-practice/add-remove-xml-nodes/t.py -f ~/pdev/manifest/defau
 git push
 ssh dev
 mv /var/www/html/proj/{{ project }}.git /var/www/html/proj.movetogithub
-
