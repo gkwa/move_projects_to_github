@@ -15,6 +15,7 @@ Steps
 
 ```sh
 . .alias
+. helper.sh
 r
 export proj=avenir_updates && cd ~/pdev/avenir_updates && git co -t dev/master ||:
 python /Users/demo/pdgh/move_projects_to_github/create_move_script_from_template.py -p $proj
